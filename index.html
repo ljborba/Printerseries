@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title></title>
+</head>
+<body class="bg-body-tertiary">
+
+    <div class="container d-flex flex-column align-items-center bg-body-secondary">
+
+        <header>
+            <h1>
+                Printerseries
+            </h1>
+        </header>
+
+        <main>
+            <form>
+                <div class="d-flex flex-row gap-4">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Série">
+                    </div>
+                    <!-- Botões de Tarefas -->
+                    <div>
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="material-symbols-outlined">
+                                bring_your_own_ip
+                                </span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="material-symbols-outlined">
+                                usb
+                                </span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="material-symbols-outlined">
+                                install_desktop
+                                </span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <span class="material-symbols-outlined">
+                                settings
+                                </span>
+                        </button>
+                    </div>
+                    <!-- Botões de Ação -->
+                    <div>
+                        <button type="button" class="btn btn-success add-button">
+                            <i class="material-icons">add</i>
+                        </button>
+                        <button type="button" class="btn btn-danger remove-list" onclick="clearAll()">
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="list">
+                <ul id="ul"></ul>
+            </div>
+
+        </main>
+
+        <footer>
+            <p></p>
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
