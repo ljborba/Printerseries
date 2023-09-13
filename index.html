@@ -22,7 +22,7 @@
             <form>
                 <div class="d-flex flex-row gap-4">
                     <div class="m-auto">
-                        <input type="text" id="formGroupExampleInput" placeholder="Série">
+                        <input type="text" placeholder="Série" class="addText">
                     </div>
                     <!-- Botões de Tarefas -->
                     <div>
@@ -50,7 +50,7 @@
                     <!-- Botões de Ação -->
                     <div>
                         <button type="button" class="btn btn-success add-button">
-                            <i class="material-icons">add</i>
+                            <i onsubmit="addElement()" class="material-icons">add</i>
                         </button>
                         <button type="button" class="btn btn-danger remove-list" onclick="clearAll()">
                             <i class="material-icons">delete</i>
@@ -59,14 +59,14 @@
                 </div>
             </form>
             <!-- lista -->
-            <div class="list">
+            <div class="list bg-body-tertiary">
                 <ul id="ul"></ul>
             </div>
 
         </main>
 
-        <footer>
-            <p>Desenvolvido por Lucas</p>
+        <footer class="fixed-bottom">
+            <p class="text-center">Desenvolvido por Lucas</p>
         </footer>
 
     </div>
