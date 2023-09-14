@@ -28,63 +28,27 @@ input:focus::placeholder {
 }
 
 ul {
-    margin-bottom: 0;
-    margin-top: 15px;
-    padding-top: 8px;
-    background: white;
     width: 493px;
     height: 340px;
     overflow: auto;
-  }
-  
-  ul::-webkit-scrollbar {
+}
+
+ul::-webkit-scrollbar {
     -webkit-appearance: none;
     appearance: none;
-  }
-  
-  .element {
-    position: relative;
+}
+
+.element {
     height: fit-content;
     width: 390px;
     bottom: 12px;
-    right: 40px;
     margin-left: 4px;
     padding: 0.5rem;
     list-style-type: none;
     color: black;
-    text-align: left;
+    text-align: center;
     font-size: 26px;
     line-height: 35px;
     word-wrap: break-word;
-    font-family: Arial, Helvetica, sans-serif;
   }
   
-  #checked {
-    position: absolute;
-    left: 380px;
-    top: 0%;
-    color: black;
-    background: white;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: none;
-  }
-  
-  #checked:hover {
-    color: #4ca1af;
-  }
-  
-  #remove {
-    position: absolute;
-    left: 425px;
-    top: 0%;
-    color: black;
-    background: white;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border: none;
-  }
-  
-  #remove:hover {
-    color: #4ca1af;
-  }
