@@ -8,7 +8,6 @@ onload = function(){
   }
 }
 
-
 function clearAll(){
   if(elements.length > 0){  
     let lista = document.getElementsByTagName("ul")[0]
@@ -45,9 +44,8 @@ function addPrinter(){
 function display(){
   document.getElementById("list").innerHTML = "";
   for(var i = 0; i < elements.length; i++)
-  document.getElementById("list").innerHTML += "<li class='element'>" + elements[i] + "<button id='checked' onclick='strike(" + 
-  i + ")'><i class='material-icons'>done</i></button> <button id='remove' onclick='del(" + i + ")'><i class='material-icons'>delete</i></button></li>"
-  
+  document.getElementById("list").innerHTML += 
+"<li class='element'>" + elements[i] + "<button id='checked' onclick='strike(" + i + ")'> <i class='material-icons btn btn-success'>done </i> </button> <button id='remove' onclick='del(" + i + ")'> <i class='btn btn-danger material-icons'>delete </i> </button> </li>" 
 }
 
 function del(index){

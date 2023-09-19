@@ -22,12 +22,15 @@
         <main>
             <form>
                 <div class="d-flex flex-row gap-4">
+                    <!-- Caixa de texto Série -->
                     <div class="m-auto">
                         <input id="inputText" type="text" placeholder="Série">
                     </div>
+                    <!-- Caixa de texto Cliente -->
                     <div class="m-auto">
                         <input type="text" placeholder="Cliente" class="addText" size="5">
                     </div>
+
                     <!-- Botões de Tarefas -->
                     <div>
                         <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Incluir IP da impressora no NDD Host." type="button" class="btn btn-outline-primary">
@@ -51,6 +54,7 @@
                                 </span>
                         </button>
                     </div>
+
                     <!-- Botões de Ação -->
                     <div>
                         <button onclick="addPrinter()" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Adicionar item na lista." type="button" class="btn btn-success">
@@ -61,6 +65,7 @@
                         </button>
                     </div>
                 </div>
+
                 <!-- Lista -->
                 <div>
                     <ul id="list"></ul>
