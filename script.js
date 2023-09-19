@@ -21,9 +21,10 @@ function clearAll(){
   }
 }
 
-function addElement(){
-  if(document.querySelector(".addText").value.trim() != ""){
-    elements.push(document.querySelector(".addText").value.trim());    
+function addPrinter(){
+
+  if(document.getElementById("inputText").value.trim() != ""){
+    elements.push(document.getElementById("inputText").value);    
 
     if(localStorage.getItem("todo-elements") == null){
       localStorage.setItem("todo-elements", JSON.stringify(elements));
@@ -42,9 +43,9 @@ function addElement(){
 }
 
 function display(){
-  document.querySelector("#ul").innerHTML = "";
+  document.getElementById("list").innerHTML = "";
   for(var i = 0; i < elements.length; i++)
-  document.querySelector("#ul").innerHTML += "<li class='element'>" + elements[i] + "<button id='checked' onclick='strike(" + 
+  document.getElementById("list").innerHTML += "<li class='element'>" + elements[i] + "<button id='checked' onclick='strike(" + 
   i + ")'><i class='material-icons'>done</i></button> <button id='remove' onclick='del(" + i + ")'><i class='material-icons'>delete</i></button></li>"
   
 }
@@ -84,3 +85,4 @@ function strike(index){
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+

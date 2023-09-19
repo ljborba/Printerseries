@@ -20,10 +20,10 @@
         </header>
 
         <main>
-            <form onsubmit="addElement()">
+            <form>
                 <div class="d-flex flex-row gap-4">
                     <div class="m-auto">
-                        <input type="text" placeholder="Série" class="addText">
+                        <input id="inputText" type="text" placeholder="Série">
                     </div>
                     <div class="m-auto">
                         <input type="text" placeholder="Cliente" class="addText" size="5">
@@ -53,7 +53,7 @@
                     </div>
                     <!-- Botões de Ação -->
                     <div>
-                        <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Adicionar item na lista." type="button" class="btn btn-success add-button">
+                        <button onclick="addPrinter()" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Adicionar item na lista." type="button" class="btn btn-success">
                             <i class="material-icons">add</i>
                         </button>
                         <button data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Remover todos os itens da lista." type="button" class="btn btn-danger remove-list" onclick="clearAll()">
@@ -61,13 +61,11 @@
                         </button>
                     </div>
                 </div>
+                <!-- Lista -->
+                <div>
+                    <ul id="list"></ul>
+                </div>
             </form>
-
-            <!-- lista -->
-            <div class="list">
-                <ul id="ul"></ul>
-            </div>
-
         </main>
 
         <footer class="fixed-bottom">
